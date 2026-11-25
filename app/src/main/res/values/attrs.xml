@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Atributos propios de los temas: cada módulo les da un valor distinto -->
+    <attr name="fondoPantalla" format="reference" />
+    <attr name="colorTarjeta" format="color" />
+    <attr name="colorTextoTarjeta" format="color" />
+    <attr name="colorTextoSecundario" format="color" />
+    <attr name="colorFuncionCientifica" format="color" />
+</resources>

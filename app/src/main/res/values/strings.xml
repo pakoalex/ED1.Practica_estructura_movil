@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tienda de Ropa</string>
+
+    <!-- Etiquetas de Activities (AndroidManifest) -->
+    <string name="label_huella">Acceso seguro</string>
+    <string name="label_menu_principal">Menú principal</string>
+    <string name="label_acerca_de">Acerca de</string>
+    <string name="label_base_datos">Base de datos</string>
+    <string name="label_ver_registros">Ver registros</string>
+    <string name="label_actualizar">Actualizar prenda</string>
+    <string name="label_eliminar">Eliminar prenda</string>
+    <string name="label_menu_calculadora">Calculadora</string>
+    <string name="label_calculadora_normal">Calculadora normal</string>
+    <string name="label_calculadora_cientifica">Calculadora científica</string>
+    <string name="label_historial">Historial</string>
+
+    <!-- Comunes -->
+    <string name="cancelar">Cancelar</string>
+
+    <!-- Huella dactilar -->
+    <string name="huella_titulo">Bienvenido</string>
+    <string name="huella_mensaje">Verifica tu identidad con tu huella dactilar para entrar a la tienda.</string>
+    <string name="huella_boton">Usar huella dactilar</string>
+    <string name="huella_prompt_titulo">Autenticación biométrica</string>
+    <string name="huella_prompt_subtitulo">Coloca tu dedo en el sensor</string>
+    <string name="huella_no_reconocida">Huella no reconocida. Inténtalo de nuevo.</string>
+    <string name="huella_sin_hardware">Este dispositivo no cuenta con lector de huella dactilar.</string>
+    <string name="huella_hardware_no_disponible">El lector de huella no está disponible por el momento.</string>
+    <string name="huella_sin_registrar">No hay huellas registradas. Registra una en Ajustes &gt; Seguridad.</string>
+    <string name="huella_error_generico">No fue posible usar la autenticación biométrica.</string>
+    <string name="huella_exito">Acceso concedido</string>
+    <string name="huella_error_prompt">Autenticación cancelada o con error: %1$s</string>
+    <string name="descripcion_icono_huella">Icono de huella dactilar</string>
+
+    <!-- Menú principal -->
+    <string name="menu_titulo">Tienda de Ropa</string>
+    <string name="menu_subtitulo">Administración de inventario</string>
+    <string name="menu_base_datos">Base de datos</string>
+    <string name="menu_calculadora">Calculadora</string>
+    <string name="menu_acerca_de">Acerca de</string>
+
+    <!-- Acerca de -->
+    <string name="acerca_titulo">Acerca de</string>
+    <string name="acerca_alumnos_titulo">Alumnos</string>
+    <string name="acerca_alumno1">Nombre y apellido del alumno 1</string>
+    <string name="acerca_alumno2">Nombre y apellido del alumno 2</string>
+    <string name="acerca_grupo">Grupo: (escribe tu grupo)</string>
+    <string name="acerca_materia">Desarrollo de aplicaciones móviles · Sep-Dic 2026</string>
+    <string name="acerca_version">Versión de la app: %1$s</string>
+    <string name="acerca_creditos_titulo">Créditos</string>
+    <string name="acerca_creditos">Universidad Politécnica del Estado de Morelos.\nProfesor: Lorenzo Antonio Cardoso Contreras.\nPráctica ED1: Persistencia de datos.\nImágenes de fondo: (anota aquí la fuente y la licencia de tus imágenes).</string>
+
+    <!-- Base de datos: formulario -->
+    <string name="bd_titulo">Registro de prendas</string>
+    <string name="hint_codigo">Código único (3 a 10 letras o números)</string>
+    <string name="hint_nombre">Nombre de la prenda</string>
+    <string name="etiqueta_talla">Talla</string>
+    <string name="hint_color">Color</string>
+    <string name="hint_precio">Precio (MXN)</string>
+    <string name="hint_cantidad">Cantidad disponible</string>
+    <string name="hint_marca">Marca</string>
+    <string name="btn_insertar">Insertar</string>
+    <string name="btn_ver">Ver registros</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_eliminar">Eliminar</string>
+
+    <!-- Ver registros -->
+    <string name="ver_titulo">Inventario</string>
+    <string name="hint_buscar_nombre">Buscar por nombre</string>
+    <string name="ver_vacio">No hay prendas que mostrar.</string>
+    <string name="item_codigo">Código: %1$s</string>
+    <string name="item_talla_color">Talla %1$s · Color %2$s</string>
+    <string name="item_precio_cantidad">Precio: $%1$.2f · Disponibles: %2$d</string>
+    <string name="item_marca">Marca: %1$s</string>
+    <string name="btn_editar">Editar</string>
+
+    <!-- Actualizar -->
+    <string name="actualizar_titulo">Actualizar prenda</string>
+    <string name="actualizar_instruccion">Busca la prenda por su código, modifica los datos y guarda.</string>
+    <string name="hint_buscar_codigo">Código de la prenda</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_guardar_cambios">Guardar cambios</string>
+
+    <!-- Eliminar -->
+    <string name="eliminar_titulo">Eliminar prenda</string>
+    <string name="eliminar_instruccion">Busca la prenda por su código para ver sus datos antes de eliminarla.</string>
+    <string name="vista_previa_prenda">Código: %1$s\nNombre: %2$s\nTalla: %3$s\nColor: %4$s\nPrecio: $%5$.2f\nCantidad: %6$d\nMarca: %7$s</string>
+    <string name="dialogo_eliminar_titulo">Confirmar eliminación</string>
+    <string name="dialogo_eliminar_mensaje">¿Deseas eliminar la prenda «%1$s» (código %2$s)? Esta acción no se puede deshacer.</string>
+
+    <!-- Errores de validación (setError) -->
+    <string name="error_obligatorio">Este campo es obligatorio</string>
+    <string name="error_codigo_formato">Solo letras y números, de 3 a 10 caracteres</string>
+    <string name="error_codigo_existente">Ya existe una prenda con este código</string>
+    <string name="error_nombre_longitud">Debe tener entre 2 y 40 caracteres</string>
+    <string name="error_talla">Selecciona una talla</string>
+    <string name="error_color">El color solo puede contener letras</string>
+    <string name="error_precio_numero">Ingresa un número válido</string>
+    <string name="error_precio">El precio debe ser mayor que cero</string>
+    <string name="error_cantidad_numero">Ingresa un número entero</string>
+    <string name="error_cantidad">La cantidad debe ser mayor o igual a cero</string>
+    <string name="error_marca_longitud">Debe tener entre 2 y 30 caracteres</string>
+
+    <!-- Toast -->
+    <string name="toast_corrige_errores">Corrige los campos marcados</string>
+    <string name="toast_prenda_insertada">Prenda «%1$s» registrada correctamente</string>
+    <string name="toast_prenda_actualizada">Prenda «%1$s» actualizada correctamente</string>
+    <string name="toast_prenda_eliminada">Prenda «%1$s» eliminada</string>
+    <string name="toast_id_no_existe">No existe una prenda con ese código</string>
+    <string name="toast_error_generico">Ocurrió un error. Inténtalo de nuevo.</string>
+    <string name="toast_historial_borrado">Historial borrado</string>
+
+    <!-- Menú calculadora -->
+    <string name="calc_menu_titulo">Calculadora</string>
+    <string name="calc_menu_normal">Calculadora normal</string>
+    <string name="calc_menu_cientifica">Calculadora científica</string>
+    <string name="calc_menu_historial">Historial</string>
+
+    <!-- Calculadora: pantalla y modos -->
+    <string name="calc_cero">0</string>
+    <string name="calc_linea_expresion">%1$s =</string>
+    <string name="modo_grados">Grados</string>
+    <string name="modo_radianes">Radianes</string>
+
+    <!-- Calculadora: errores -->
+    <string name="calc_error_division_cero">No se puede dividir entre cero</string>
+    <string name="calc_error_doble_operador">No puedes escribir dos operadores seguidos</string>
+    <string name="calc_error_incompleta">La expresión está incompleta</string>
+    <string name="calc_error_sintaxis">Expresión no válida</string>
+    <string name="calc_error_factorial">El factorial solo acepta enteros de 0 a 20</string>
+    <string name="calc_error_raiz">No existe la raíz cuadrada de un número negativo</string>
+    <string name="calc_error_logaritmo">El logaritmo solo acepta números mayores que cero</string>
+    <string name="calc_error_tangente">La tangente no está definida para ese ángulo</string>
+    <string name="calc_error_resultado">El resultado no es un número válido</string>
+
+    <!-- Calculadora: teclas -->
+    <string name="calc_0">0</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="calc_punto">.</string>
+    <string name="calc_suma">+</string>
+    <string name="calc_resta">−</string>
+    <string name="calc_mult">×</string>
+    <string name="calc_div">÷</string>
+    <string name="calc_igual">=</string>
+    <string name="calc_borrar">⌫</string>
+    <string name="calc_limpiar">C</string>
+    <string name="calc_porcentaje">%</string>
+    <string name="calc_signo">±</string>
+    <string name="calc_sin">sin</string>
+    <string name="calc_cos">cos</string>
+    <string name="calc_tan">tan</string>
+    <string name="calc_ln">ln</string>
+    <string name="calc_log">log</string>
+    <string name="calc_raiz">√</string>
+    <string name="calc_cuadrado">x²</string>
+    <string name="calc_potencia">xʸ</string>
+    <string name="calc_factorial">n!</string>
+    <string name="calc_pi">π</string>
+    <string name="calc_par_abre">(</string>
+    <string name="calc_par_cierra">)</string>
+
+    <!-- Historial -->
+    <string name="historial_titulo">Historial de operaciones</string>
+    <string name="historial_vacio">Aún no hay operaciones guardadas.</string>
+    <string name="historial_resultado">= %1$s</string>
+    <string name="historial_detalle">%1$s · %2$s</string>
+    <string name="historial_tipo_normal">Normal</string>
+    <string name="historial_tipo_cientifica">Científica</string>
+    <string name="btn_borrar_historial">Borrar historial</string>
+    <string name="dialogo_borrar_historial_titulo">Borrar historial</string>
+    <string name="dialogo_borrar_historial_mensaje">Se eliminarán todas las operaciones guardadas. ¿Deseas continuar?</string>
+</resources>

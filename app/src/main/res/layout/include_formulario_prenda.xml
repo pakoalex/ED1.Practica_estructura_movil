@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Formulario compartido por BaseDatosActivity y ActualizarActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Contenedor.Vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etCodigo"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_codigo"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nombre"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:maxLength="40" />
+
+    <TextView
+        style="@style/Etiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_talla" />
+
+    <Spinner
+        android:id="@+id/spTalla"
+        style="@style/Campo.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etColor"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_color"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:maxLength="30" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_precio"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_cantidad"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/etMarca"
+        style="@style/Campo.Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_marca"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:maxLength="30" />
+</LinearLayout>

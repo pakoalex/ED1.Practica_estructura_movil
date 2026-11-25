@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modo oscuro: menú principal y base de datos -->
+<resources>
+    <color name="menu_primario">#12355F</color>
+    <color name="menu_primario_variante">#061528</color>
+    <color name="menu_secundario">#1FC8BC</color>
+    <color name="menu_acento">#FFD25E</color>
+    <color name="menu_sobre_primario">#FFFFFF</color>
+    <color name="menu_sobre_secundario">#061528</color>
+    <color name="menu_sobre_acento">#061528</color>
+    <color name="menu_superficie">#E61A2332</color>
+    <color name="menu_texto">#F0F4F8</color>
+    <color name="menu_texto_secundario">#A9B7C9</color>
+</resources>

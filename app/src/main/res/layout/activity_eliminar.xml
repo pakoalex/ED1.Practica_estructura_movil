@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Fondo.Tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Titulo.Pantalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminar_titulo" />
+
+            <TextView
+                style="@style/Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminar_instruccion" />
+
+            <LinearLayout
+                style="@style/Fila.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etBuscarCodigo"
+                    style="@style/Campo.Texto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_buscar_codigo"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:maxLength="10" />
+
+                <Button
+                    style="@style/Boton.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBuscar"
+                    android:text="@string/btn_buscar" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvVistaPrevia"
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnConfirmarEliminar"
+                style="@style/Boton.Acento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onEliminar"
+                android:text="@string/btn_eliminar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

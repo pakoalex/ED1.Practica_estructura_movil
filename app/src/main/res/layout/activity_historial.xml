@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Fondo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Titulo.Pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/historial_titulo" />
+
+        <TextView
+            android:id="@+id/tvHistorialVacio"
+            style="@style/Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/historial_vacio"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/Boton.Principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBorrarHistorial"
+            android:text="@string/btn_borrar_historial" />
+    </LinearLayout>
+</LinearLayout>

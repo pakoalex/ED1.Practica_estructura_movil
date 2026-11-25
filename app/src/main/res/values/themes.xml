@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menú principal y Acerca de: azul marino, turquesa y amarillo (con modo oscuro) -->
+    <style name="Theme.ED1.Menu" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/menu_primario</item>
+        <item name="colorPrimaryVariant">@color/menu_primario_variante</item>
+        <item name="colorOnPrimary">@color/menu_sobre_primario</item>
+        <item name="colorSecondary">@color/menu_secundario</item>
+        <item name="colorSecondaryVariant">@color/menu_secundario</item>
+        <item name="colorOnSecondary">@color/menu_sobre_secundario</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="fondoPantalla">@drawable/fondo_tienda</item>
+        <item name="colorTarjeta">@color/menu_superficie</item>
+        <item name="colorTextoTarjeta">@color/menu_texto</item>
+        <item name="colorTextoSecundario">@color/menu_texto_secundario</item>
+    </style>
+
+    <!-- Base de datos: misma paleta de 3 colores -->
+    <style name="Theme.ED1.BaseDatos" parent="Theme.ED1.Menu" />
+
+    <!-- Calculadora normal: naranja / negro / blanco -->
+    <style name="Theme.ED1.Calculadora" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/naranja</item>
+        <item name="colorPrimaryVariant">@color/negro</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/naranja</item>
+        <item name="colorSecondaryVariant">@color/negro</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="fondoPantalla">@drawable/fondo_calculadora</item>
+        <item name="colorTarjeta">@color/calc_superficie</item>
+        <item name="colorTextoTarjeta">@color/calc_texto</item>
+        <item name="colorTextoSecundario">@color/calc_texto_secundario</item>
+    </style>
+
+    <!-- Calculadora científica: deriva de la normal y agrega un color de acento -->
+    <style name="Theme.ED1.CalculadoraCientifica" parent="Theme.ED1.Calculadora">
+        <item name="colorFuncionCientifica">@color/morado_cientifico</item>
+        <item name="fondoPantalla">@drawable/fondo_calculadora_cientifica</item>
+    </style>
+
+</resources>

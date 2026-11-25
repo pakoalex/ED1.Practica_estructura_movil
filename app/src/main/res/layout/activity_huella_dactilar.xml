@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Fondo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/icono_huella"
+            android:layout_height="@dimen/icono_huella"
+            android:contentDescription="@string/descripcion_icono_huella"
+            android:src="@drawable/ic_huella" />
+
+        <TextView
+            style="@style/Titulo.Pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/huella_titulo" />
+
+        <TextView
+            style="@style/Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/huella_mensaje" />
+
+        <TextView
+            android:id="@+id/tvEstadoHuella"
+            style="@style/Texto.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Button
+            style="@style/Boton.Principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAutenticar"
+            android:text="@string/huella_boton" />
+    </LinearLayout>
+</LinearLayout>

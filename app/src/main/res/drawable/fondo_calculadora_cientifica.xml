@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FONDO PROVISIONAL de la calculadora científica. Para usar una imagen real:
+  elimina este archivo y copia res/drawable/fondo_calculadora_cientifica.jpg (mismo nombre).
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/negro"
+        android:startColor="#241B3D" />
+</shape>

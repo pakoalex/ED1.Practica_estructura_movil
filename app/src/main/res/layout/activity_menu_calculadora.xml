@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Fondo.Tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Titulo.Pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calc_menu_titulo" />
+
+        <Button
+            style="@style/Boton.Principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="irNormal"
+            android:text="@string/calc_menu_normal" />
+
+        <Button
+            style="@style/Boton.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="irCientifica"
+            android:text="@string/calc_menu_cientifica" />
+
+        <Button
+            style="@style/Boton.Calc.Accion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="irHistorial"
+            android:text="@string/calc_menu_historial" />
+    </LinearLayout>
+</LinearLayout>

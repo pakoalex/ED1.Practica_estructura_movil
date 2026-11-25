@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta del menú y la base de datos (3 colores distintos al default) -->
+    <color name="azul_marino">#0B2545</color>
+    <color name="turquesa">#13A89E</color>
+    <color name="amarillo">#FFC93C</color>
+
+    <!-- Paleta de la calculadora -->
+    <color name="naranja">#FF6D00</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="morado_cientifico">#7C4DFF</color>
+
+    <!-- Roles del tema Menú / Base de datos (se redefinen en values-night) -->
+    <color name="menu_primario">@color/azul_marino</color>
+    <color name="menu_primario_variante">#071A33</color>
+    <color name="menu_secundario">@color/turquesa</color>
+    <color name="menu_acento">@color/amarillo</color>
+    <color name="menu_sobre_primario">@color/blanco</color>
+    <color name="menu_sobre_secundario">@color/azul_marino</color>
+    <color name="menu_sobre_acento">@color/azul_marino</color>
+    <color name="menu_superficie">#E6FFFFFF</color>
+    <color name="menu_texto">@color/azul_marino</color>
+    <color name="menu_texto_secundario">#4A5A70</color>
+
+    <!-- Roles del tema Calculadora -->
+    <color name="calc_superficie">#CC000000</color>
+    <color name="calc_texto">@color/blanco</color>
+    <color name="calc_texto_secundario">#B3FFFFFF</color>
+    <color name="calc_tecla_numero">#E02E2E2E</color>
+    <color name="calc_tecla_accion">#E0616161</color>
+    <color name="calc_pantalla">#99000000</color>
+
+    <!-- Fondos provisionales (se reemplazan por imágenes) -->
+    <color name="fondo_degradado_inicio">#1B3A5F</color>
+    <color name="fondo_degradado_fin">#0B2545</color>
+</resources>

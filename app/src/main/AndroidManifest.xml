@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <application
+        android:name=".TiendaApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_huella"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_huella"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ED1.Menu">
+
+        <!-- 1. Pantalla de bienvenida con huella dactilar (LAUNCHER) -->
+        <activity
+            android:name=".ui.auth.Huella_Dactilar"
+            android:exported="true"
+            android:label="@string/label_huella"
+            android:theme="@style/Theme.ED1.Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Menú principal (raíz de la navegación: no tiene padre) -->
+        <activity
+            android:name=".ui.menu.MenuPrincipalActivity"
+            android:exported="false"
+            android:label="@string/label_menu_principal"
+            android:theme="@style/Theme.ED1.Menu" />
+
+        <!-- Extra. Acerca de -->
+        <activity
+            android:name=".ui.menu.AcercaDeActivity"
+            android:exported="false"
+            android:label="@string/label_acerca_de"
+            android:parentActivityName=".ui.menu.MenuPrincipalActivity"
+            android:theme="@style/Theme.ED1.Menu" />
+
+        <!-- 3 a 6. Módulo Base de datos -->
+        <activity
+            android:name=".ui.prendas.BaseDatosActivity"
+            android:exported="false"
+            android:label="@string/label_base_datos"
+            android:parentActivityName=".ui.menu.MenuPrincipalActivity"
+            android:theme="@style/Theme.ED1.BaseDatos" />
+        <activity
+            android:name=".ui.prendas.VerRegistrosActivity"
+            android:exported="false"
+            android:label="@string/label_ver_registros"
+            android:parentActivityName=".ui.prendas.BaseDatosActivity"
+            android:theme="@style/Theme.ED1.BaseDatos" />
+        <activity
+            android:name=".ui.prendas.ActualizarActivity"
+            android:exported="false"
+            android:label="@string/label_actualizar"
+            android:parentActivityName=".ui.prendas.BaseDatosActivity"
+            android:theme="@style/Theme.ED1.BaseDatos" />
+        <activity
+            android:name=".ui.prendas.EliminarActivity"
+            android:exported="false"
+            android:label="@string/label_eliminar"
+            android:parentActivityName=".ui.prendas.BaseDatosActivity"
+            android:theme="@style/Theme.ED1.BaseDatos" />
+
+        <!-- 7 a 9. Módulo Calculadora (+ Historial) -->
+        <activity
+            android:name=".ui.calculadora.MenuCalculadoraActivity"
+            android:exported="false"
+            android:label="@string/label_menu_calculadora"
+            android:parentActivityName=".ui.menu.MenuPrincipalActivity"
+            android:theme="@style/Theme.ED1.Calculadora" />
+        <activity
+            android:name=".ui.calculadora.CalculadoraNormalActivity"
+            android:exported="false"
+            android:label="@string/label_calculadora_normal"
+            android:parentActivityName=".ui.calculadora.MenuCalculadoraActivity"
+            android:theme="@style/Theme.ED1.Calculadora" />
+        <activity
+            android:name=".ui.calculadora.CalculadoraCientificaActivity"
+            android:exported="false"
+            android:label="@string/label_calculadora_cientifica"
+            android:parentActivityName=".ui.calculadora.MenuCalculadoraActivity"
+            android:theme="@style/Theme.ED1.CalculadoraCientifica" />
+        <activity
+            android:name=".ui.calculadora.HistorialActivity"
+            android:exported="false"
+            android:label="@string/label_historial"
+            android:parentActivityName=".ui.calculadora.MenuCalculadoraActivity"
+            android:theme="@style/Theme.ED1.Calculadora" />
+    </application>
+
+</manifest>

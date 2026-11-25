@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Fondo.Tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Titulo.Pantalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bd_titulo" />
+
+            <include
+                layout="@layout/include_formulario_prenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/Boton.Principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onInsertar"
+                android:text="@string/btn_insertar" />
+
+            <Button
+                style="@style/Boton.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onVer"
+                android:text="@string/btn_ver" />
+
+            <Button
+                style="@style/Boton.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onActualizar"
+                android:text="@string/btn_actualizar" />
+
+            <Button
+                style="@style/Boton.Acento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onEliminar"
+                android:text="@string/btn_eliminar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

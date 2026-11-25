@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Fondos y contenedores ===== -->
+    <style name="Fondo.Pantalla" parent="">
+        <item name="android:background">?attr/fondoPantalla</item>
+        <item name="android:padding">@dimen/padding_pantalla</item>
+    </style>
+
+    <style name="Contenedor.Vertical" parent="">
+        <item name="android:orientation">vertical</item>
+        <item name="android:divider">@drawable/divisor_vertical</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="Fondo.Tarjeta" parent="Contenedor.Vertical">
+        <item name="android:background">@drawable/bg_tarjeta</item>
+        <item name="android:padding">@dimen/padding_tarjeta</item>
+    </style>
+
+    <style name="Fila.Horizontal" parent="">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:divider">@drawable/divisor_horizontal</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- ===== Textos ===== -->
+    <style name="Titulo.Pantalla" parent="">
+        <item name="android:textColor">?attr/colorTextoTarjeta</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Subtitulo">
+        <item name="android:textColor">?attr/colorTextoSecundario</item>
+        <item name="android:textSize">@dimen/texto_subtitulo</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Etiqueta">
+        <item name="android:textColor">?attr/colorTextoSecundario</item>
+        <item name="android:textSize">@dimen/texto_pequeno</item>
+    </style>
+
+    <style name="Texto.Normal" parent="">
+        <item name="android:textColor">?attr/colorTextoTarjeta</item>
+        <item name="android:textSize">@dimen/texto_normal</item>
+    </style>
+
+    <style name="Texto.Item.Nombre" parent="Texto.Normal">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- ===== Campos ===== -->
+    <style name="Campo.Texto" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">?attr/colorTextoTarjeta</item>
+        <item name="android:textColorHint">?attr/colorTextoSecundario</item>
+        <item name="android:textSize">@dimen/texto_normal</item>
+        <item name="android:minHeight">@dimen/altura_campo</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Campo.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:minHeight">@dimen/altura_campo</item>
+    </style>
+
+    <!-- ===== Botones (siguen los colores del tema activo) ===== -->
+    <style name="Boton.Principal" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/altura_boton</item>
+        <item name="cornerRadius">@dimen/radio_esquina</item>
+    </style>
+
+    <style name="Boton.Secundario" parent="Boton.Principal">
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Boton.Acento" parent="Boton.Principal">
+        <item name="backgroundTint">@color/menu_acento</item>
+        <item name="android:textColor">@color/menu_sobre_acento</item>
+    </style>
+
+    <style name="Boton.Item" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?attr/colorTextoTarjeta</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeColor">?attr/colorSecondary</item>
+    </style>
+
+    <!-- ===== Calculadora ===== -->
+    <style name="Calc.Display" parent="">
+        <item name="android:background">@color/calc_pantalla</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">bottom|end</item>
+        <item name="android:padding">@dimen/padding_tarjeta</item>
+    </style>
+
+    <style name="Calc.Expresion" parent="">
+        <item name="android:textColor">@color/calc_texto_secundario</item>
+        <item name="android:textSize">@dimen/texto_calc_expresion</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <style name="Calc.Pantalla" parent="">
+        <item name="android:textColor">@color/calc_texto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/texto_calc_pantalla_min</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/texto_calc_pantalla_max</item>
+    </style>
+
+    <style name="Calc.Radio" parent="">
+        <item name="android:textColor">@color/calc_texto</item>
+        <item name="android:buttonTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Calc.Angulo" parent="">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Calc.Teclado" parent="">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/inset_tecla</item>
+    </style>
+
+    <style name="Calc.Fila" parent="">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Boton.Calc" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/texto_tecla</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/calc_texto</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:insetLeft">@dimen/inset_tecla</item>
+        <item name="android:insetRight">@dimen/inset_tecla</item>
+        <item name="android:insetTop">@dimen/inset_tecla</item>
+        <item name="android:insetBottom">@dimen/inset_tecla</item>
+        <item name="cornerRadius">@dimen/radio_esquina</item>
+    </style>
+
+    <style name="Boton.Calc.Numero">
+        <item name="backgroundTint">@color/calc_tecla_numero</item>
+    </style>
+
+    <style name="Boton.Calc.Accion">
+        <item name="backgroundTint">@color/calc_tecla_accion</item>
+    </style>
+
+    <style name="Boton.Calc.Operador">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Boton.Calc.Igual">
+        <item name="backgroundTint">@color/blanco</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Boton.Calc.Cientifico">
+        <item name="backgroundTint">?attr/colorFuncionCientifica</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

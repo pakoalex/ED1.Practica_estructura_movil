@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FONDO PROVISIONAL. Para usar una imagen real (ropa / boutique / tienda):
+  1) elimina este archivo, 2) copia tu imagen como res/drawable/fondo_tienda.jpg
+  (mismo nombre). No hay que tocar ningún otro archivo.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/fondo_degradado_fin"
+        android:startColor="@color/fondo_degradado_inicio" />
+</shape>

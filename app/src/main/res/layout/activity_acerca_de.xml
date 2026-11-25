@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Fondo.Pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/Fondo.Tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Titulo.Pantalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_titulo" />
+
+            <TextView
+                style="@style/Etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_alumnos_titulo" />
+
+            <TextView
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brito Chavarria Naomi Janeth" />
+
+            <TextView
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jaime Saucedo Francisco Alejandro" />
+
+            <TextView
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4-D" />
+
+            <TextView
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desarrollo de Aplicaciones Moviles" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/Etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Francisco y Naomi" />
+
+            <TextView
+                style="@style/Texto.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Universidad Politecnica del Estado de Morelos, Profesor: Lorenzo Antonio Cardoso Contreras, Practica ED1. Percistencia de datos" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
